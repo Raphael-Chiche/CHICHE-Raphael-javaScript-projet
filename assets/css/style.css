@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("components/container.css");
+@import url("components/presentation.css");
+@import url("components/buttons.css");
+@import url("components/avatar.css");
+@import url("components/navnbar.css");
+@import url("components/section.css");
+@import url("components/footer.css");
+@import url("components/card.css");
+@import url("components/carousel.css");
+@import url("components/exo.css");
+@import url("components/image3d.css");
+@import url("components/coding.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif !important;
+  height: 100vh !important;
+  
+  
+  /*background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(9,9,118,1) 0%, rgba(9,9,121,1) 0%, rgba(0,100,120,1) 62%);*/
+
+}
+
+.light{
+  background-color: #7D8E95 ;
+}
+.centre {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.modeNuit{
+  background-color: #424b4f;
+  color: white;
+}
+
+.modeNuitIIM{
+  background-color: #925638;
+  color: white;
+}
+
+.modeNuitIIMLoca{
+  background-color: #8d7964;
+  color: white;
+}
+
+.deco_texte {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0 !important;
+}
+
+.Accueil {
+  margin-bottom: 50%;
+}
+
+.reseau{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  
+}
+
+.texteOrange{
+  color: #FBE0C3;
+}
+#nuit{
+  border: none;
+}
+.texteNoir{
+  color: #000000;
+}
+
+.myButton {
+	box-shadow:inset 0px 0px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #2b3438 5%, #1d0707 100%);
+	background-color:#242424;
+	border-radius:33px;	
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #333333;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #242424 5%, #000000 100%);
+	background-color:#000000;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButtonSun {
+	box-shadow:inset 0px 0px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #a89f4a 5%, #d4c53d 100%);
+	background-color:#c8d32c;
+	border-radius:33px;	
+	display:inline-block;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b29f35;
+}
+.myButtonSun:hover {
+	background:linear-gradient(to bottom, #d6c743 5%, #9e932b 100%);
+	background-color:#a86d13;
+}
+.myButtonSun:active {
+	position:relative;
+	top:1px;
+}
+
+.titleandbutton{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-left: 5px;
+}
+        
+.image_iim_anime{
+  transform: translate(100%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.image_iim_anime.active{
+  transform: translate(0%);
+  opacity: 1;
+
+}
+
+.transiDeco{
+  display:flex;
+  font-size: large;
+}
+
+.deco{
+  height: 200px;
+  width: 20%;
+  transform: translateY(300px);
+  opacity: 0;
+  transition  : transform 0.5s ease, opacity 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Etat qui vient ecraser le premier lorsque le container obtient la class actve */
+.active  {
+  transform : translateY(0px);
+  opacity : 1;
+  
+}
+#card0{
+  background-color: #6f7e85;
+}
+#card1{
+  background-color: #627179;
+}
+#card2{
+  background-color: #5f6d73;
+}
+#card3{
+  background-color: #4e5b61;
+}
+#card4{
+  background-color: #3c494f;
+}
+#card5{
+  background-color: #2a353a;
+}
+
+.transi {
+	box-shadow:inset 0px 0px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #2b3438 5%, #1d0707 100%);
+	background-color:#242424;
+	border-radius:33px;	
+	display:inline-block;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #333333;
+}
+
+.minijeux{
+  width: 75px;
+  height: 75px;
+}
+
+.none{
+  display: none;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.italicButton{
+  box-shadow:inset 0px 0px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #4b188d 5%, #903dd4 100%);
+	background-color:#2d1097;
+	border-radius:33px;	
+	display:inline-block;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b35b2;
+}
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}

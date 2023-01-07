@@ -1,0 +1,74 @@
+.btn-demo {
+  background-color: rgb(88, 88, 250);
+  border-radius: 99999px;
+  border: none;
+  padding: 10px 20px;
+  /*1er px : top et bot /// 2eme px: gauche et droite */
+  color: white;
+  cursor: pointer;
+  height: fit-content;
+  transition: background-color 1s cubic-bezier(0.82, 0.04, 0.13, 0.92);
+  animation: changing-color 5s infinite;
+}
+
+@keyframes changing-color {
+  25% {
+    background-color: red;
+  }
+
+  50% {
+    background-color: orange;
+  }
+
+  75% {
+    background-color: red;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-demo:hover {
+  background-color: rgb(87, 87, 175);
+  animation: spin 1s infinite;
+}
+
+.btn-rectangle {
+  background-color: rgb(98, 244, 115);
+  border: none;
+  padding: 10px 20px;
+  /*1er px : top et bot /// 2eme px: gauche et droite */
+  color: white;
+  cursor: pointer;
+  height: fit-content;
+  /*fait la taille de se qu'il y a dans le bouton*/
+}
+
+.btn-rectangle:hover {
+  border-radius: 99999px;
+  background-color: rgb(65, 147, 75);
+}
+
+.btn1 {
+  background-color: rgb(245, 105, 105);
+  border-radius: 99999px;
+
+  padding: 10px 20px;
+  /*1er px : top et bot /// 2eme px: gauche et droite */
+  color: white;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.btn1:hover {
+  background-color: rgb(152, 66, 66);
+  color: black;
+  border-color: white;
+}

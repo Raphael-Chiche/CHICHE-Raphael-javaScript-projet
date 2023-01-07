@@ -1,0 +1,22 @@
+#img-sticky {
+  top: 0;
+  position: sticky;
+  height: 100vh;
+  width: 40%;
+}
+
+.flex-container {
+  display: flex;
+  padding-top: 60px;
+}
+
+.cards-container {
+  flex-grow: 1;
+  padding: 5rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}

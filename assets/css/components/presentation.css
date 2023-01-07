@@ -1,0 +1,110 @@
+.presentation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+/* Présentation des composants*/
+
+.components {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /*1rem == 16px*/
+    align-items: center;
+
+}
+
+.clair_orange{
+    background-color: #FFBB98;
+}
+.presentationiim {
+    
+    min-height: 500px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+#imageIIM {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.iim {
+    width: 40%;
+    min-width: 200px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.iim:hover {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    transform: scale(1.5);
+}
+
+.parttexte {
+    width: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-100%);
+    opacity: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+.parttexte.active{
+    transform: translate(0%);
+    opacity: 1;
+
+}
+
+.clair_loca{
+    background-color: #FBE0C3;
+}
+.ecoleIIM {
+    
+    min-height: 500px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map{
+    transform: translate(50%);
+    opacity: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; 
+    width: 50%;
+  }
+  
+.map.active{
+    transform: translate(0%);
+    opacity: 1;
+    width: 50%;
+  
+  }
+#prenom_nom {
+    font-size: 10vh;
+    display: flex;
+    text-align: center;
+    color: black;
+}
+
+.iim_accueil {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
